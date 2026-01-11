@@ -491,7 +491,3 @@ impl SpotifyPlayer {
         }
     }
 }
-
-
-
-

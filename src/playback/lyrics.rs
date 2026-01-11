@@ -263,7 +263,3 @@ impl LyricsFetcher {
         while self.rx.try_recv().is_ok() {}
     }
 }
-
-
-
-

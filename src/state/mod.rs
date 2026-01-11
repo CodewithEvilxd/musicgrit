@@ -8,7 +8,3 @@ pub mod working_playlist;
 pub use diff::{apply_patch, diff};
 pub use journal::{JournalEntry, Operation};
 pub use staging::*;
-
-
-
-

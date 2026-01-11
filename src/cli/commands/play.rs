@@ -767,7 +767,3 @@ async fn play_mpv(
     let _ = working_playlist::save_last_track(grit_dir, app.current_index);
     Ok(())
 }
-
-
-
-

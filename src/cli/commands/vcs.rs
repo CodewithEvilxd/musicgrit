@@ -424,7 +424,3 @@ pub async fn apply(file_path: &str, playlist: Option<&str>, grit_dir: &Path) -> 
 
     Ok(())
 }
-
-
-
-

@@ -31,7 +31,3 @@ pub fn create_provider(provider_kind: ProviderKind, grit_dir: &Path) -> Result<B
     };
     Ok(provider)
 }
-
-
-
-

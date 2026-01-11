@@ -34,7 +34,3 @@ pub trait Provider: Send + Sync {
     /// Check if the authenticated user can modify the playlist
     async fn can_modify_playlist(&self, playlist_id: &str) -> anyhow::Result<bool>;
 }
-
-
-
-

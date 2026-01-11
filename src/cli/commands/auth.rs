@@ -202,7 +202,3 @@ pub async fn whoami(provider: ProviderKind, grit_dir: &Path) -> Result<()> {
 
     Ok(())
 }
-
-
-
-

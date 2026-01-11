@@ -116,7 +116,10 @@ mod unix {
         pub async fn spawn() -> Result<Self> {
             check_dependencies()?;
 
-            let socket_path = PathBuf::from(format!("/tmp/musicmusicgrit-mpv-{}.sock", std::process::id()));
+            let socket_path = PathBuf::from(format!(
+                "/tmp/musicmusicgrit-mpv-{}.sock",
+                std::process::id()
+            ));
             let _ = std::fs::remove_file(&socket_path);
 
             let process = Command::new("mpv")
@@ -297,7 +300,3 @@ pub use unix::*;
 
 #[cfg(not(unix))]
 compile_error!("Playback is currently only supported on Unix systems (Linux/macOS). Windows support coming soon.");
-
-
-
-

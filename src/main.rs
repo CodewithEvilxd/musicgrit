@@ -141,7 +141,3 @@ fn resolve_playlist(
         .or_else(|| crate::state::working_playlist::load(grit_dir).ok())
         .context("Playlist required (use --playlist, 'musicmusicgrit switch <id>', or run 'musicmusicgrit init' to set working playlist)")
 }
-
-
-
-

@@ -205,7 +205,3 @@ mod tests {
         assert_eq!(loaded_youtube.access_token, "youtube_token");
     }
 }
-
-
-
-

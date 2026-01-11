@@ -279,7 +279,3 @@ impl App {
         self.search_matches.contains(&index)
     }
 }
-
-
-
-

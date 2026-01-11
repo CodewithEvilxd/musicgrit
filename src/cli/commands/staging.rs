@@ -478,7 +478,3 @@ pub async fn commit(message: &str, playlist: Option<&str>, grit_dir: &Path) -> R
 
     Ok(())
 }
-
-
-
-

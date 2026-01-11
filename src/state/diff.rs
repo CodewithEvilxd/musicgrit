@@ -108,7 +108,3 @@ pub fn apply_patch(snapshot: &mut PlaylistSnapshot, patch: &DiffPatch) -> Result
 
     Ok(())
 }
-
-
-
-

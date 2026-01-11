@@ -51,7 +51,3 @@ pub fn save_last_track(grit_dir: &Path, track_index: usize) -> Result<()> {
     state.last_track_index = Some(track_index);
     save_state(grit_dir, &state)
 }
-
-
-
-

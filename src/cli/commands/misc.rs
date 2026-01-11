@@ -206,8 +206,9 @@ pub async fn switch(playlist_id: &str, grit_dir: &Path) -> Result<()> {
 }
 
 pub async fn curr(grit_dir: &Path) -> Result<()> {
-    let playlist_id = working_playlist::load(grit_dir)
-        .context("No working playlist set. Use 'musicgrit init' or 'musicgrit switch' to set one.")?;
+    let playlist_id = working_playlist::load(grit_dir).context(
+        "No working playlist set. Use 'musicgrit init' or 'musicgrit switch' to set one.",
+    )?;
 
     let snapshot_path = snapshot::snapshot_path(grit_dir, &playlist_id);
     if !snapshot_path.exists() {
@@ -227,7 +228,3 @@ pub async fn curr(grit_dir: &Path) -> Result<()> {
 
     Ok(())
 }
-
-
-
-

@@ -527,7 +527,3 @@ fn draw_controls(frame: &mut Frame, app: &App, area: Rect) {
 
     frame.render_widget(Paragraph::new(controls).block(block), area);
 }
-
-
-
-

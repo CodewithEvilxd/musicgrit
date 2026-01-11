@@ -126,7 +126,3 @@ pub async fn run(provider: ProviderKind, input: &str, grit_dir: &Path) -> Result
 
     Ok(())
 }
-
-
-
-

@@ -49,7 +49,3 @@ pub fn has_staged_changes(grit_dir: &Path, playlist_id: &str) -> Result<bool> {
     let patch = load_staged(grit_dir, playlist_id)?;
     Ok(!patch.changes.is_empty())
 }
-
-
-
-

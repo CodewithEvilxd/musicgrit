@@ -552,7 +552,3 @@ impl Provider for SpotifyProvider {
         Ok(playlist.owner.id == user.id || playlist.collaborative)
     }
 }
-
-
-
-
